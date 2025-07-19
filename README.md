@@ -46,6 +46,15 @@ To handle large, high-resolution satellite images, we used a **sliding window** 
 - Overlapping patches were processed in batches.
 - Class probabilities were averaged across overlapping regions to smooth predictions and reduce edge artifacts.
 
+## Training Environment
+
+Model training and experiments were conducted on the PALMA High-Performance Computing (HPC) Cluster at the University of Münster. 
+
+This involved:
+- Managing large-scale experiments via SLURM job scripts
+- Working on Linux-based systems for model training and data preprocessing
+- Efficient use of computational resources for sliding window inference and multi-GPU training
+
 ## Notes
 
 - **Data Augmentation**: Tried, but it worsened validation F1 scores.
